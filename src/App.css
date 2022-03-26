@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Source+Sans+Pro:wght@600&family=Ubuntu+Mono&display=swap');
+
+body {
+  background-color: aquamarine;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#editor {
+  font-family: 'Ubuntu Mono' monospace;
+  width: 80%;
+  resize: none;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 1px 2px 5px 2px gray;
+  outline-color: dodgerblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#preview {
+  
+  background-color: white;
+  padding: 30px;
+  text-align: left;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 1px 2px 5px 1px gray;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#preview code {
+  background-color: black;
   color: white;
+  padding: 5px;
+}
+#preview img {
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  
+  font-family: 'EB Garamond', serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+pre {
+  display: block;
+  overflow: auto;
+  background: black;
+  padding: 5px;
+  line-height: 1.4;
+  color: white;
 }
